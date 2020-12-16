@@ -1,8 +1,3 @@
-Import-Module ExchangeOnlineManagement
-
-$UserCredential = Get-Credential
-Connect-ExchangeOnline -Credential $UserCredential -ShowProgress $true
-
 $AdminURL="https://x-admin.sharepoint.com" #change to your tentant
 Connect-SPOService -Url $AdminURL
 
